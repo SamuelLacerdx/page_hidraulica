@@ -1,0 +1,325 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    width: 100vw;
+    height: 100vh;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 250px;
+    background-color: rgb(49, 52, 233);
+    position: relative;
+    h1{
+        color: white;
+    }
+    nav{
+        width: 100%;
+        height: 70px;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid blue;
+        img{
+            margin: 0px 0px 0px 10px;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+        .navegando{
+            margin: 0px 20px 0px auto;
+            .selecionado
+            {
+                background-color: blue;
+                color: white;
+                border-radius: 10px;
+            }
+        
+        }
+        .entrar{                
+            background-color: green;
+            color: white;
+            border-radius: 10px;}
+        a{
+            text-decoration: none;
+            color:blue;
+            padding: 10px 20px;
+        }
+        a:hover{
+            background-color: Blue;
+            color: white;
+            border-radius: 10px;
+        }
+        a:active{
+            background-color: rgb(135, 135, 248);
+            color: white;
+            padding: 7px 15px;
+        }
+    }
+    h1{
+        width: 100%;
+        height: calc(100% - 70px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+main{
+    width: 100%;
+    height: fit-content;
+    margin: 0px 0px 50px 0px;
+    h2{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 0px 10px 0px;
+    }    
+    p{
+        width: 100%;
+        text-align: center;
+        height: calc(100% - 50px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .card-solucao{
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+       align-items: center;
+        
+    }
+    .solucao{
+        background-color: aliceblue;
+        padding: 20px;
+        width: 300px;
+        height: 350px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 20px;
+        border: 1px solid black;
+        border-radius: 10px;
+        img{
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            margin: 0px 0px 20px 0px;
+        }
+        button{
+            padding: 10px 20px;
+            background-color: rgb(30, 151, 30);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+   
+    }
+    
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    h2{
+        margin: auto 0px 10px 0px;
+        color: black;
+    }
+
+    .social a{
+        text-decoration: none;
+        color: white;
+       padding: 10px;
+        
+    }
+    .social img{
+        width: 30px;
+        height: 30px;
+    }
+
+    p{
+        background-color: black;
+        width: 100%;
+        text-align: center;
+        margin: auto 0px 0px 0px;
+        padding: 10px;
+    }
+}
+
+
+// sobre 
+.sobre{
+    display: grid;
+    grid-template-rows: 5% 90% 5%;
+}
+
+.header-nave{
+    height: fit-content;
+}
+.footer-sobre{
+    height: fit-content;
+}
+.main-sobre{
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: 20px 0px;
+     
+     .caixa{
+        width: 600px;
+        height: fit-content;
+        background-color: aliceblue;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        
+        p{
+           width: 100%;
+           text-align: center;
+           padding: 20px;
+        }
+    }
+
+}
+
+// contatos
+
+.main-contato{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+
+    .formulario{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        gap: 10px;
+        border-radius: 10px;
+        width: 400px;
+        background-color: aliceblue;
+
+        input{
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+
+        button{
+             padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 15px;
+            width: 100%;
+        }
+    }
+}
+
+// Acesso
+
+.header-liso{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(49, 52, 233);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+    h1{
+        width: fit-content;
+
+    }
+
+    a{
+        text-decoration: none;
+        background-color: orangered;
+        color: white;
+        text-align: end;
+        border: solid black 2px;
+        border-radius: 10px;
+        padding: 10px 20px;
+    }
+}
+
+.main-acesso{
+    width: 100%;
+    height: calc(100% - 70px);
+    background-color: antiquewhite;
+    display: flex;
+
+    .menu-lateral{
+        background-color: white;
+        padding: 20px;
+        width: 10%;
+        
+        a{
+            border-radius: 10px;
+            text-decoration: none;
+            color: white;
+            margin: 20px;
+            padding: 10px;
+            background-color: blue;
+
+        }
+    }
+
+    .container-acesso{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .msg-inicio{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            h1 {
+                color: blue;
+            }
+        }
+    }
+}
+.escondido{
+    display: none;
+}

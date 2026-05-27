@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos.css" />
+    <script src="./js/consulta.js" defer></script>
+    <title>Acesso</title>
+  </head>
+  <body>
+    <header class="header-liso">
+      <h1>Sistema Hidraulico</h1>
+      <a href="page.html">Sair</a>
+    </header>
+    <main class="main-acesso">
+      <div class="menu-lateral">
+        <a id="consulta" href="">Consultar Produto</a>
+      </div>
+      <div class="container-acesso">
+        <!-- MENSAGEM BEM VINDO -->
+        <div class="msg-inicio">
+          <h1>Bem-Vindo</h1>
+          <p>Selecione uma opção no menu lateral.</p>
+        </div>
+        <!-- CONSULTAR PRODUTO -->
+        <div id="tela-consulta" class="msg-inicio escondido">
+          <h1>Consultar Produto</h1>
+          <div class="busca-container">
+            <p><span id="imagem"></span></p>
+            <p><span id="nome"></span></p>
+            <p><span id="preco"></span></p>
+            <p><span id="descricao"></span></p>
+            <input
+              id="idBusca"
+              type="text"
+              placeholder="Digite o nome do produto..."
+            />
+            <button id="btn-buscar" onclick="buscarBomba()">Buscar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Áudios com IDs diferentes -->
+      <audio id="olhaBomba">
+        <source src="./songs/audio.mp3" type="audio/mpeg" />
+      </audio>
+    </main>
+  </body>
+</html>
