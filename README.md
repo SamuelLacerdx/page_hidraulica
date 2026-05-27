@@ -8,8 +8,8 @@ Site de uma empresa de produtos hidráulicos com área de login e consulta de pr
 
 Acesse a página `login.html` e utilize as credenciais:
 
-> **E-mail:** `admin@hidraulica.com`  
-> **Senha:** `1234`
+> **E-mail:** `admin@admin`  
+> **Senha:** `admin`
 
 ---
 
